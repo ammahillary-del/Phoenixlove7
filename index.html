@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <title>PhoenixLove — Rencontres par affinités de valeurs, pas par photo</title>
+    <meta name="description" content="PhoenixLove classe les profils par compatibilité de valeurs et de centres d'intérêt, floute les photos après un certain nombre de matchs, et vérifie les profils actifs — pour des rencontres plus vraies et plus sûres." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.phoenixlove.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="PhoenixLove — Rencontres par affinités de valeurs" />
+    <meta property="og:description" content="Le swipe vous fatigue, la superficialité aussi. Découvrez des profils classés par compatibilité réelle." />
+    <meta property="og:image" content="/icons/icon-512.png" />
+    <meta property="og:url" content="https://www.phoenixlove.com/" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PhoenixLove — Rencontres par affinités de valeurs" />
+    <meta name="twitter:description" content="Le swipe vous fatigue, la superficialité aussi." />
+    <meta name="twitter:image" content="/icons/icon-512.png" />
+
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#1C1620" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/icon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-180.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="PhoenixLove" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/sw.js").catch(() => {});
+        });
+      }
+    </script>
+  </body>
+</html>
